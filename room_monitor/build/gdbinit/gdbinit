@@ -1,0 +1,2 @@
+source /home/umairgillani/esp/projects/room_monitor/build/gdbinit/symbols
+source /home/umairgillani/esp/projects/room_monitor/build/gdbinit/connect

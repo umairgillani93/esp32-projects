@@ -1,0 +1,1355 @@
+Command: /home/umairgillani/.espressif/python_env/idf6.2_py3.10_env/bin/python /home/umairgillani/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/umairgillani/esp/projects/room_monitor/build/room_monitor.elf /home/umairgillani/esp/projects/room_monitor/build/bootloader/bootloader.elf -m '/home/umairgillani/.espressif/python_env/idf6.2_py3.10_env/bin/python' '/home/umairgillani/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf82338e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf82338e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc113ce8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04738e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc4730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc4730e8
+invalid header: 0xf04730e8
+invalid header: 0xfc113ce8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xfc4730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf08f30e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc4730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xe04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xfc2338e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc113ce8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xfc4730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xfc4730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf08f30e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc4730e8
+invalid header: 0xe04730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xfc4730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xfc4730e8
+invalid header: 0x1f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xfc113ce8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0x1f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc2338e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xe04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xfe083ee8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xfc2338e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc113ce8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xfc2338e8
+invalid header: 0x1f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc4730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xfc4730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xfe083ee8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x107f30e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xfc4730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xfc4730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xfc2338e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xfc113ce8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x1f4430e8
+invalid header: 0xfc4730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xfc4730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xfc2338e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xe08f30e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xe04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xfc113ce8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc113ce8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xfc4730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xfe083ee8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xfe083ee8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xfc2338e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xfc4730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xfc4730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf08f30e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xfe083ee8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xfc4730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xfc113ce8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xe04730e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xfc113ce8
+invalid header: 0xf04730e8
+invalid header: 0xfc113ce8
+invalid header: 0xfc2338e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xfc2338e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xfe2338e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xfc113ce8
+invalid header: 0xfc113ce8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xfe083ee8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf08f30e8
+invalid header: 0xf84730e8
+invalid header: 0xfc113ce8
+invalid header: 0xf04730e8
+invalid header: 0xfc4730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc4730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xfc4730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc113ce8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0x1f4430e8
+invalid header: 0xfc113ce8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xfc113ce8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc4730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xfc4730e8
+invalid header: 0xf84730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf08f30e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc2338e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf82338e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x107f30e8
+invalid header: 0xfc113ce8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xfc2338e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xfc2338e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xfc2338e8
+invalid header: 0x0f4430e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xfc2338e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x1b (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xf82338e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf84730e8
+invalid header: 0xf08f30e8
+invalid header: 0xf04730e8
+invalid header: 0x0f4430e8
+invalid header: 0xfc4730e8
+invalid header: 0xf04730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x0f4430e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+invalid header: 0xf04730e8
+invalid header: 0xf84730e8
+ets Jul 29 2019 12:21:46
+
+rst:0x10 (RTCWDT_RTC_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xfc4730e8
