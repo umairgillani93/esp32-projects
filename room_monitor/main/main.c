@@ -35,6 +35,6 @@ void app_main(void)
             printf("Read failed: %s\n", esp_err_to_name(err));
         }
 
-        vTaskDelay(pdMS_TO_TICKS(300000));
+        vTaskDelay(pdMS_TO_TICKS(1000));
     }
 }
