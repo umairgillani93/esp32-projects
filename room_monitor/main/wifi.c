@@ -14,9 +14,8 @@
 #include "webserver.h"
 #include "sensor_data.h"
 
-#define WIFI_SSID "add you wifi ssid here"
-#define WIFI_PASS "add password here"
-
+#define WIFI_SSID "ZTE_2.4G_wNh6Tx"
+#define WIFI_PASS "s2GHX67a"
 
 static const char *TAG = "wifi";
 

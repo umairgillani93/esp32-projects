@@ -13,7 +13,7 @@ static esp_err_t root_handler(httpd_req_t *req)
         "<meta http-equiv='refresh' content='2'>"
         "</head>"
         "<body>"
-        "<h1>Umair/Huda's Room Temperature/Humidity</h1>"
+        "<h1>Haider's Room Temperature/Humidity</h1>"
         "<h2>Temperature : %.1f C</h2>"
         "<h2>Humidity : %.1f %%</h2>"
         "</body>"

@@ -1,7 +1,7 @@
 {
     "version":            "1.3",
     "project_name":       "room_monitor",
-    "project_version":    "1c7185b-dirty",
+    "project_version":    "e9d47fb-dirty",
     "project_path":       "/home/umairgillani/github/esp32-projects/room_monitor",
     "idf_path":           "/home/umairgillani/esp/esp-idf",
     "build_dir":          "/home/umairgillani/github/esp32-projects/room_monitor/build",
