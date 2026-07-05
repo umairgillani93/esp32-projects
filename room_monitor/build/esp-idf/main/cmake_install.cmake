@@ -1,4 +1,4 @@
-# Install script for directory: /home/umairgillani/esp/projects/room_monitor/main
+# Install script for directory: /home/umairgillani/github/esp32-projects/room_monitor/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

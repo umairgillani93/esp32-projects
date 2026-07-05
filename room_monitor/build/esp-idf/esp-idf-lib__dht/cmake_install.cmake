@@ -1,4 +1,4 @@
-# Install script for directory: /home/umairgillani/esp/projects/room_monitor/managed_components/esp-idf-lib__dht
+# Install script for directory: /home/umairgillani/github/esp32-projects/room_monitor/managed_components/esp-idf-lib__dht
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

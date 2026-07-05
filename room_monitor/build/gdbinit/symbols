@@ -18,8 +18,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file /home/umairgillani/esp/projects/room_monitor/build/bootloader/bootloader.elf
+    add-symbol-file /home/umairgillani/github/esp32-projects/room_monitor/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file /home/umairgillani/esp/projects/room_monitor/build/room_monitor.elf
+file /home/umairgillani/github/esp32-projects/room_monitor/build/room_monitor.elf

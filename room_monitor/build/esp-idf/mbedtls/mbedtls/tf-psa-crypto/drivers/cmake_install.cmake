@@ -39,10 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/umairgillani/esp/projects/room_monitor/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/everest/cmake_install.cmake")
-  include("/home/umairgillani/esp/projects/room_monitor/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/p256-m/cmake_install.cmake")
-  include("/home/umairgillani/esp/projects/room_monitor/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/cmake_install.cmake")
-  include("/home/umairgillani/esp/projects/room_monitor/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/pqcp/cmake_install.cmake")
+  include("/home/umairgillani/github/esp32-projects/room_monitor/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/everest/cmake_install.cmake")
+  include("/home/umairgillani/github/esp32-projects/room_monitor/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/p256-m/cmake_install.cmake")
+  include("/home/umairgillani/github/esp32-projects/room_monitor/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/cmake_install.cmake")
+  include("/home/umairgillani/github/esp32-projects/room_monitor/build/esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/pqcp/cmake_install.cmake")
 
 endif()
 

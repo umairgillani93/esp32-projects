@@ -1,0 +1,3654 @@
+Command: /home/umairgillani/.espressif/python_env/idf6.2_py3.10_env/bin/python /home/umairgillani/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/umairgillani/github/esp32-projects/room_monitor/build/room_monitor.elf /home/umairgillani/github/esp32-projects/room_monitor/build/bootloader/bootloader.elf -m '/home/umairgillani/.espressif/python_env/idf6.2_py3.10_env/bin/python' '/home/umairgillani/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6364
+ho 0 tail 12 room 4
+load:0x40078000,len:15720
+ho 0 tail 12 room 4
+load:0x40080400,len:3904
+entry 0x4008061c
+[0;32mI (31) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  5 2026 11:31:05[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c910h (117008) map[0m
+[0;32mI (135) esp_image: segment 1: paddr=0002c938 vaddr=3ffb0000 size=036e0h ( 14048) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=8fb24h (588580) map[0m
+[0;32mI (360) esp_image: segment 3: paddr=000bfb4c vaddr=3ffb36e0 size=00fb8h (  4024) load[0m
+[0;32mI (362) esp_image: segment 4: paddr=000c0b0c vaddr=40080000 size=1529ch ( 86684) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=000d5db0 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (412) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (412) boot: Disabling RNG early entropy source...[0m
+[0;32mI (422) cpu_start: Multicore app[0m
+[0;32mI (430) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (431) cpu_start: Pro cpu start user code[0m
+[0;32mI (431) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (433) app_init: Application information:[0m
+[0;32mI (436) app_init: Project name:     room_monitor[0m
+[0;32mI (441) app_init: App version:      1c7185b-dirty[0m
+[0;32mI (445) app_init: Compile time:     Jul  5 2026 12:34:55[0m
+[0;32mI (450) app_init: ELF file SHA256:  8568e670a...[0m
+[0;32mI (454) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (460) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (464) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (468) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (472) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (483) heap_init: At 3FFB9278 len 00026D88 (155 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (494) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 4009529C len 0000AD64 (43 KiB): IRAM[0m
+[0;33mW (506) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (518) spi_flash: detected chip: generic[0m
+[0;32mI (521) spi_flash: flash io: dio[0m
+[0;33mW (524) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (538) main_task: Started on CPU0[0m
+[0;32mI (538) main_task: Calling app_main()[0m
+[0;32mI (578) wifi:wifi driver task: 3ffc0cac, prio:23, stack:6656, core=0[0m
+[0;32mI (588) wifi:wifi firmware version: d3da506[0m
+[0;32mI (588) wifi:wifi certification version: v7.0[0m
+[0;32mI (588) wifi:config NVS flash: enabled[0m
+[0;32mI (588) wifi:config nano formatting: disabled[0m
+[0;32mI (598) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (598) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (598) wifi:Init management short buffer num: 32[0m
+[0;32mI (608) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (608) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (618) wifi:Init static rx buffer num: 10[0m
+[0;32mI (618) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (628) wifi_init: rx ba win: 6[0m
+[0;32mI (628) wifi_init: accept mbox: 6[0m
+[0;32mI (628) wifi_init: tcpip mbox: 32[0m
+[0;32mI (628) wifi_init: udp mbox: 6[0m
+[0;32mI (638) wifi_init: tcp mbox: 6[0m
+[0;32mI (638) wifi_init: tcp tx win: 5760[0m
+[0;32mI (638) wifi_init: tcp rx win: 5760[0m
+[0;32mI (648) wifi_init: tcp mss: 1440[0m
+[0;32mI (648) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (648) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (658) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (658) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (738) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (758) wifi:mode : sta (2c:bc:bb:92:79:8c)[0m
+[0;32mI (758) wifi:enable tsf[0m
+[0;32mI (758) wifi: WiFi initialization complete.[0m
+[0;32mI (758) wifi: Connecting to WiFi...[0m
+[0;33mW (3178) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+[0;33mW (5598) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+[1;31mE (5778) dht: Initialization error, problem in phase 'B'[0m
+Read failed: ESP_ERR_TIMEOUT
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 79.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 82.0 %
+-------------------------
+[0;33mW (8018) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 85.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 86.0 %
+-------------------------
+[0;33mW (10438) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 87.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 89.0 %
+-------------------------
+[0;33mW (12858) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 89.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 89.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (15268) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (17688) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (20118) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (22538) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (24958) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (27378) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (29798) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (32218) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (34648) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (37058) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (39498) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (41918) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (44338) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (46758) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (49178) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (51598) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (54028) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (56438) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (58878) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (61298) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (63718) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (66138) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (68558) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (70978) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (73408) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (75818) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (78258) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (80678) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (83098) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (85518) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (87938) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (90358) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (92788) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (95198) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (97638) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (100058) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (102478) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (104898) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (107318) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (109738) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (112168) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (114578) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (117018) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (119438) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (121858) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (124278) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (126698) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (129118) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (131548) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (133958) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (136398) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (138818) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (141238) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (143658) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (146078) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (148498) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (150928) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (153338) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (155778) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (158198) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (160618) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (163038) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (165458) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (167878) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (170308) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (172718) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (175158) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (177578) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (179998) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (182418) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (184838) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (187258) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (189688) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (192098) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (194538) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (196958) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (199378) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (201798) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (204218) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (206638) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (209068) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (211478) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (213918) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (216338) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (218758) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (221178) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (223598) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (226018) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (228448) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (230858) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (233298) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (235718) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (238138) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (240558) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (242978) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (245398) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (247828) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (250238) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (252678) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (255098) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (257518) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (259938) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (262358) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (264778) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (267208) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (269618) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (272058) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (274478) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (276898) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (279318) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (281738) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (284158) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (286588) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (288998) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (291438) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (293858) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (296278) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (298698) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (301118) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (303538) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (305968) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (308378) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (310818) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (313238) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (315658) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (318078) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (320498) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (322918) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (325348) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (327758) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (330198) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (332618) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (335038) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (337458) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (339878) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (342298) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (344728) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (347138) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (349578) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (351998) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (354418) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (356838) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (359258) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (361678) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (364108) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (366518) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (368958) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (371378) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (373798) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (376218) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (378638) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (381058) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (383488) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (385898) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (388338) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (390758) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (393178) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (395598) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (398018) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (400438) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (402868) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (405278) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (407718) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (410138) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (412558) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (414978) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (417398) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (419818) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (422248) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (424658) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (427098) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (429518) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (431938) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (434358) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (436778) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (439198) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (441628) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (444038) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (446478) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (448898) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (451318) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (453738) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (456158) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (458578) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (461008) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (463418) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (465858) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (468278) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (470698) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (473118) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (475538) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (477958) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (480388) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (482798) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (485238) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (487658) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (490078) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (492498) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (494918) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (497338) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (499768) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (502178) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (504618) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (507038) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (509458) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (511878) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (514298) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (516718) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (519148) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (521558) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (523998) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (526418) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (528838) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (531258) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (533678) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (536098) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (538528) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (540938) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (543378) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (545798) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (548218) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (550638) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (553058) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (555478) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (557908) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (560318) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (562758) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (565178) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (567598) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (570018) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (572438) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (574858) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (577288) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (579698) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (582138) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (584558) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (586978) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (589398) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (591818) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (594238) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (596668) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (599078) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (601518) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (603938) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (606358) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (608778) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (611198) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (613618) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (616048) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (618458) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (620898) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (623318) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (625738) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (628158) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (630578) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (632998) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (635428) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (637838) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (640278) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (642698) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (645118) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (647538) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (649958) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (652378) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (654808) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (657218) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (659658) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (662078) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (664498) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;33mW (666918) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 32.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (669338) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 32.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 32.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (671758) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 32.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 32.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 32.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;33mW (674188) wifi: Disconnected from WiFi. Reason = 201. Reconnecting...[0m
+
+-------------------------
+Temperature : 32.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 32.0 °C
+Humidity    : 91.0 %
+-------------------------

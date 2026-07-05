@@ -1,4 +1,4 @@
-# Install script for directory: /home/umairgillani/esp/projects/room_monitor
+# Install script for directory: /home/umairgillani/github/esp32-projects/room_monitor
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/umairgillani/esp/projects/room_monitor/build/esp-idf/cmake_install.cmake")
+  include("/home/umairgillani/github/esp32-projects/room_monitor/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/umairgillani/esp/projects/room_monitor/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/umairgillani/github/esp32-projects/room_monitor/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

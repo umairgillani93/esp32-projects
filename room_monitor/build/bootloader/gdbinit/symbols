@@ -22,4 +22,4 @@ set confirm off
 set confirm on
 
 # Load application symbols
-file /home/umairgillani/esp/projects/room_monitor/build/bootloader/bootloader.elf
+file /home/umairgillani/github/esp32-projects/room_monitor/build/bootloader/bootloader.elf

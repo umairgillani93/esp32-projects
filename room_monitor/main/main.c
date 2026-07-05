@@ -7,12 +7,22 @@
 #include "esp_err.h"
 #include "dht.h"
 
+#include "sensor_data.h"
+#include "wifi.h"
+#include "webserver.h"
+
 #define DHT_GPIO GPIO_NUM_4
 
 void app_main(void)
 {
-    float temperature = 0;
-    float humidity = 0;
+		wifi_init();
+
+		vTaskDelay(pdMS_TO_TICKS(5000));
+
+		start_webserver();
+
+    float temperature = 0.0;
+    float humidity = 0.0;
 
     while (1)
     {
@@ -24,10 +34,13 @@ void app_main(void)
 
         if (err == ESP_OK)
         {
+            g_temp = temperature;
+            g_humid = humidity;
+
             printf("\n");
             printf("-------------------------\n");
-            printf("Temperature : %.1f °C\n", temperature);
-            printf("Humidity    : %.1f %%\n", humidity);
+            printf("Temperature : %.1f °C\n", g_temp);
+            printf("Humidity    : %.1f %%\n", g_humid);
             printf("-------------------------\n");
         }
         else

@@ -1,0 +1,2243 @@
+Command: /home/umairgillani/.espressif/python_env/idf6.2_py3.10_env/bin/python /home/umairgillani/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/umairgillani/github/esp32-projects/room_monitor/build/room_monitor.elf /home/umairgillani/github/esp32-projects/room_monitor/build/bootloader/bootloader.elf -m '/home/umairgillani/.espressif/python_env/idf6.2_py3.10_env/bin/python' '/home/umairgillani/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6364
+ho 0 tail 12 room 4
+load:0x40078000,len:15720
+ho 0 tail 12 room 4
+load:0x40080400,len:3904
+entry 0x4008061c
+[0;32mI (31) boot: ESP-IDF v6.1-dev-6126-ge9da155a726 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul  5 2026 11:31:05[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1c8b0h (116912) map[0m
+[0;32mI (135) esp_image: segment 1: paddr=0002c8d8 vaddr=3ffb0000 size=03740h ( 14144) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=8fb98h (588696) map[0m
+[0;32mI (360) esp_image: segment 3: paddr=000bfbc0 vaddr=3ffb3740 size=00f58h (  3928) load[0m
+[0;32mI (362) esp_image: segment 4: paddr=000c0b20 vaddr=40080000 size=1529ch ( 86684) load[0m
+[0;32mI (401) esp_image: segment 5: paddr=000d5dc4 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (412) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (412) boot: Disabling RNG early entropy source...[0m
+[0;32mI (422) cpu_start: Multicore app[0m
+[0;32mI (430) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (431) cpu_start: Pro cpu start user code[0m
+[0;32mI (431) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (433) app_init: Application information:[0m
+[0;32mI (436) app_init: Project name:     room_monitor[0m
+[0;32mI (441) app_init: App version:      1c7185b-dirty[0m
+[0;32mI (445) app_init: Compile time:     Jul  5 2026 12:34:55[0m
+[0;32mI (450) app_init: ELF file SHA256:  6a3c1fb18...[0m
+[0;32mI (454) app_init: ESP-IDF:          v6.1-dev-6126-ge9da155a726[0m
+[0;32mI (460) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (464) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (468) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (472) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (478) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (483) heap_init: At 3FFB9278 len 00026D88 (155 KiB): DRAM[0m
+[0;32mI (488) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (494) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (499) heap_init: At 4009529C len 0000AD64 (43 KiB): IRAM[0m
+[0;33mW (506) spi_flash: Detected boya flash chip but using generic driver. For optimal functionality, enable `SPI_FLASH_SUPPORT_BOYA_CHIP` in menuconfig[0m
+[0;32mI (518) spi_flash: detected chip: generic[0m
+[0;32mI (521) spi_flash: flash io: dio[0m
+[0;33mW (524) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (538) main_task: Started on CPU0[0m
+[0;32mI (538) main_task: Calling app_main()[0m
+1
+2
+3
+4
+5
+6
+[0;32mI (578) wifi:wifi driver task: 3ffc0cac, prio:23, stack:6656, core=0[0m
+[0;32mI (588) wifi:wifi firmware version: d3da506[0m
+[0;32mI (588) wifi:wifi certification version: v7.0[0m
+[0;32mI (588) wifi:config NVS flash: enabled[0m
+[0;32mI (588) wifi:config nano formatting: disabled[0m
+[0;32mI (598) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (598) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (598) wifi:Init management short buffer num: 32[0m
+[0;32mI (608) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (608) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (618) wifi:Init static rx buffer num: 10[0m
+[0;32mI (618) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (628) wifi_init: rx ba win: 6[0m
+[0;32mI (628) wifi_init: accept mbox: 6[0m
+[0;32mI (628) wifi_init: tcpip mbox: 32[0m
+[0;32mI (628) wifi_init: udp mbox: 6[0m
+[0;32mI (638) wifi_init: tcp mbox: 6[0m
+[0;32mI (638) wifi_init: tcp tx win: 5760[0m
+[0;32mI (638) wifi_init: tcp rx win: 5760[0m
+[0;32mI (648) wifi_init: tcp mss: 1440[0m
+[0;32mI (648) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (648) wifi_init: WiFi RX IRAM OP enabled[0m
+7
+8
+9
+10
+11
+[0;33mW (658) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+12
+[0;32mI (668) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (748) wifi:mode : sta (2c:bc:bb:92:79:8c)[0m
+[0;32mI (748) wifi:enable tsf[0m
+[0;32mI (3168) wifi: Disconnected. Reconnecting...[0m
+[0;32mI (5588) wifi: Disconnected. Reconnecting...[0m
+[1;31mE (5768) dht: Initialization error, problem in phase 'B'[0m
+Read failed: ESP_ERR_TIMEOUT
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 81.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 84.0 %
+-------------------------
+[0;32mI (8008) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 86.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 87.0 %
+-------------------------
+[0;32mI (10418) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 89.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 89.0 %
+-------------------------
+[0;32mI (12838) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (15258) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (17678) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;32mI (20108) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;32mI (22528) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;32mI (24948) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+[0;32mI (27368) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+[0;32mI (29788) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+[0;32mI (32208) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+[0;32mI (34638) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+[0;32mI (37048) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 92.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;32mI (39488) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;32mI (41908) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;32mI (44328) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;32mI (46748) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;32mI (49168) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;32mI (51588) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;32mI (54018) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 91.0 %
+-------------------------
+[0;32mI (56428) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (58868) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (61288) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (63708) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (66128) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (68548) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (70968) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (73398) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (75808) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (78248) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (80668) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (83088) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (85508) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (87928) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (90348) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (92778) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (95188) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (97628) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (100048) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (102468) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (104888) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (107308) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (109728) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (112158) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (114568) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (117008) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (119428) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (121848) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (124268) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (126688) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (129108) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (131538) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (133948) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (136388) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (138808) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (141228) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (143648) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (146068) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (148488) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (150918) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (153328) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (155768) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (158188) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (160608) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (163028) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (165448) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (167868) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (170298) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (172708) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (175148) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (177568) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (179988) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (182408) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (184828) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (187248) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (189678) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (192088) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (194528) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (196948) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (199368) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (201788) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (204208) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (206628) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (209058) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (211468) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (213908) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (216328) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (218748) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (221168) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (223588) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (226008) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (228438) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (230848) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (233288) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (235708) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (238128) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (240548) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (242968) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (245388) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (247818) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (250228) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (252668) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (255088) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (257508) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (259928) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (262348) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (264768) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (267198) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (269608) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (272048) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (274468) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (276888) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (279308) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (281728) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (284148) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (286578) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (288988) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (291428) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (293848) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (296268) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (298688) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (301108) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (303528) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (305958) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (308368) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (310808) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (313228) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (315648) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (318068) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (320488) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (322908) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (325338) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (327748) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (330188) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (332608) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (335028) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (337448) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (339868) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (342288) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (344718) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (347128) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (349568) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (351988) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (354408) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (356828) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (359248) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (361668) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (364098) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (366508) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (368948) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (371368) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (373788) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (376208) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (378628) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (381048) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (383478) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (385888) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (388328) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (390748) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (393168) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (395588) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (398008) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (400428) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (402858) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (405268) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
+[0;32mI (407708) wifi: Disconnected. Reconnecting...[0m
+
+-------------------------
+Temperature : 33.0 °C
+Humidity    : 90.0 %
+-------------------------
